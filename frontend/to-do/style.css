@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+/*-----------------------*/
+body{
+    font-family: Roboto;
+    background-color: #ffffff;
+}
+.content{
+    max-width: 840px;
+    margin: 0 auto;
+}
+.content_title{
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+}
+.line_by_width{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content_add input {
+    width: 700px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 3px solid #a495ac;
+    font-size: 18px;
+}
+.content_add button{
+    background-color: #c8b8db;
+    padding: 15px 20px;
+    color: white;
+}
+.content_add button:hover{
+    background-color: #b3b3b3;
+}
+li input{
+    width: 20px;
+    height: 20px;
+}
+.task{
+    font-size: 20px;
+    margin: 0px 0px 0px 20px;
+}
+.delete-btn{
+    width: 45px;
+    height: 45px;
+    font-weight: 400;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    color: #fff;
+    background-color: #f44336;
+}
+.delete-btn::before {
+    font-size: 20px;
+}
+.delete-btn:hover{
+    background-color: #b3b3b3;
+}
+input[type=checkbox] + span {
+    text-decoration: none;
+}
+input[type=checkbox]:checked + span {
+    text-decoration: line-through;
+}

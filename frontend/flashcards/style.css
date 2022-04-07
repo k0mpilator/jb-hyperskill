@@ -1,0 +1,158 @@
+/*-----Reset CSS-----*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+/*-----End-----*/
+body {
+    font-family: 'Permanent Marker', cursive;
+    background: url("img/world-map.png") 0 0/cover no-repeat;
+}
+
+.content {
+    width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin: .67em 0;
+    font-weight: bold;
+}
+
+.header {
+    text-align: center;
+    color: #434d54;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    perspective: 1200px;
+}
+
+.question-card,
+.filler {
+    height: 192px;
+    flex: 0 32%;
+    backface-visibility: hidden;
+    margin-bottom: 2%;
+    position: relative;
+    transition: 1s linear;
+    transform-style: preserve-3d;
+}
+
+.question-card:hover .filler {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding-top: 25px;
+    border-radius: 10px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.front {
+    background-color: #f9efe5;
+    backface-visibility: hidden;
+    color: #fd983a;
+    z-index: 2;
+}
+
+.back {
+    background-color: #fd983a;
+    color: #f9efe5;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
